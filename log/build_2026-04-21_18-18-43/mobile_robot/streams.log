@@ -1,0 +1,29 @@
+[2.217s] Invoking command in '/home/user/ws_mobile_robot/build/mobile_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/ws_mobile_robot/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/user/ws_mobile_robot/build/mobile_robot/build --no-deps symlink_data
+[2.844s] running develop
+[3.210s] running egg_info
+[3.211s] creating mobile_robot.egg-info
+[3.247s] writing mobile_robot.egg-info/PKG-INFO
+[3.247s] writing dependency_links to mobile_robot.egg-info/dependency_links.txt
+[3.247s] writing requirements to mobile_robot.egg-info/requires.txt
+[3.248s] writing top-level names to mobile_robot.egg-info/top_level.txt
+[3.248s] writing manifest file 'mobile_robot.egg-info/SOURCES.txt'
+[3.322s] reading manifest file 'mobile_robot.egg-info/SOURCES.txt'
+[3.323s] writing manifest file 'mobile_robot.egg-info/SOURCES.txt'
+[3.359s] running build_ext
+[3.360s] Creating /home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages/mobile-robot.egg-link (link to .)
+[3.361s] 
+[3.361s] Installed /home/user/ws_mobile_robot/build/mobile_robot
+[3.361s] running symlink_data
+[3.362s] creating /home/user/ws_mobile_robot/install/mobile_robot/share/ament_index
+[3.362s] creating /home/user/ws_mobile_robot/install/mobile_robot/share/ament_index/resource_index
+[3.362s] creating /home/user/ws_mobile_robot/install/mobile_robot/share/ament_index/resource_index/packages
+[3.362s] symbolically linking /home/user/ws_mobile_robot/build/mobile_robot/resource/mobile_robot -> /home/user/ws_mobile_robot/install/mobile_robot/share/ament_index/resource_index/packages
+[3.362s] symbolically linking /home/user/ws_mobile_robot/build/mobile_robot/package.xml -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot
+[3.363s] creating /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/launch
+[3.363s] symbolically linking /home/user/ws_mobile_robot/build/mobile_robot/launch/gazebo_model.launch.py -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/launch
+[3.363s] creating /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/model
+[3.363s] symbolically linking /home/user/ws_mobile_robot/build/mobile_robot/model/robot.xacro -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/model
+[3.364s] symbolically linking /home/user/ws_mobile_robot/build/mobile_robot/model/robot.gazebo -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/model
+[3.364s] creating /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/params
+[3.364s] symbolically linking /home/user/ws_mobile_robot/build/mobile_robot/params/bridge_parameters.yaml -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/params
+[3.428s] Invoked command in '/home/user/ws_mobile_robot/build/mobile_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/ws_mobile_robot/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/user/ws_mobile_robot/build/mobile_robot/build --no-deps symlink_data
