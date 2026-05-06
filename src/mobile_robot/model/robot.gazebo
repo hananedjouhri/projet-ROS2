@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <robot>
   <gazebo>
+    <!-- CE PLUGIN EST ESSENTIEL POUR ACTIVER LES CAPTEURS -->
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
     <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
       <left_joint>drivewhl_l_joint</left_joint>
       <right_joint>drivewhl_r_joint</right_joint>
@@ -13,12 +18,14 @@
     </plugin>
   </gazebo>
 
+  <!-- Configuration LIDAR -->
   <gazebo reference="laser_frame">
     <sensor name="gpu_lidar" type="gpu_lidar">
       <pose>0 0 0 0 0 0</pose>
       <topic>scan</topic>
       <update_rate>10</update_rate>
-      <lidar> <scan>
+      <lidar> 
+        <scan>
           <horizontal>
             <samples>640</samples>
             <resolution>1</resolution>
@@ -33,6 +40,30 @@
         </range>
       </lidar>
       <gz_frame_id>laser_frame</gz_frame_id>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+    </sensor>
+  </gazebo>
+
+  <!-- Configuration CAMERA -->
+  <gazebo reference="camera_link">
+    <sensor name="camera" type="camera">
+      <pose>0 0 0 0 0 0</pose>
+      <topic>camera/image_raw</topic>
+      <update_rate>10</update_rate>
+      <camera>
+        <horizontal_fov>1.089</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>8.0</far>
+        </clip>
+      </camera>
+      <gz_frame_id>camera_link</gz_frame_id>
       <always_on>1</always_on>
       <visualize>true</visualize>
     </sensor>

@@ -1,1 +1,0 @@
-/home/user/ws_mobile_robot/src/mobile_robot/setup.py

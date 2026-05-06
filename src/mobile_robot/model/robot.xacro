@@ -92,6 +92,7 @@
         <origin xyz="0.2 0 -0.05" rpy="0 0 0"/>
     </joint>
 
+    <!-- LIDAR -->
     <link name="laser_frame">
         <visual>
             <geometry><cylinder radius="0.05" length="0.04"/></geometry>
@@ -109,30 +110,22 @@
         <origin xyz="0.1 0 0.12" rpy="0 0 0"/>
     </joint>
 
-    <gazebo reference="laser_frame">
-        <sensor name="lidar" type="gpu_ray">
-            <pose> 0 0 0 0 0 0 </pose>
-            <visualize>true</visualize>
-            <update_rate>10</update_rate>
-            <ray>
-                <scan>
-                    <horizontal>
-                        <samples>360</samples>
-                        <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
-                    </horizontal>
-                </scan>
-                <range>
-                    <min>0.3</min>
-                    <max>12</max>
-                </range>
-            </ray>
-            <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
-                <render_engine>ogre2</render_engine>
-            </plugin>
-            <topic>scan</topic>
-            <gz_frame_id>laser_frame</gz_frame_id>
-        </sensor>
-    </gazebo>
+    <!-- CAMERA -->
+    <link name="camera_link">
+        <visual>
+            <geometry><box size="0.05 0.05 0.05"/></geometry>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <geometry><box size="0.05 0.05 0.05"/></geometry>
+        </collision>
+        <xacro:box_inertia m="0.1" w="0.05" h="0.05" d="0.05"/>
+    </link>
+
+    <joint name="camera_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+        <origin xyz="0.28 0 0.05" rpy="0 0 0"/>
+    </joint>
 
 </robot>

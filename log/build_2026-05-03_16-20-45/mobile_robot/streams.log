@@ -1,0 +1,36 @@
+[6.208s] Invoking command in '/home/user/ws_mobile_robot/build/mobile_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/ws_mobile_robot/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/user/ws_mobile_robot/build/mobile_robot/build
+[8.317s] running develop
+[9.945s] Removing /home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages/mobile-robot.egg-link (link to .)
+[10.116s] Invoked command in '/home/user/ws_mobile_robot/build/mobile_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/ws_mobile_robot/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/user/ws_mobile_robot/build/mobile_robot/build
+[10.119s] Invoking command in '/home/user/ws_mobile_robot/src/mobile_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/ws_mobile_robot/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mobile_robot build --build-base /home/user/ws_mobile_robot/build/mobile_robot/build install --record /home/user/ws_mobile_robot/build/mobile_robot/install.log --single-version-externally-managed install_data --force
+[12.052s] running egg_info
+[12.214s] writing ../../build/mobile_robot/mobile_robot.egg-info/PKG-INFO
+[12.215s] writing dependency_links to ../../build/mobile_robot/mobile_robot.egg-info/dependency_links.txt
+[12.217s] writing requirements to ../../build/mobile_robot/mobile_robot.egg-info/requires.txt
+[12.218s] writing top-level names to ../../build/mobile_robot/mobile_robot.egg-info/top_level.txt
+[12.533s] reading manifest file '../../build/mobile_robot/mobile_robot.egg-info/SOURCES.txt'
+[12.549s] writing manifest file '../../build/mobile_robot/mobile_robot.egg-info/SOURCES.txt'
+[12.550s] running build
+[12.551s] running build_py
+[12.551s] creating /home/user/ws_mobile_robot/build/mobile_robot/build
+[12.552s] creating /home/user/ws_mobile_robot/build/mobile_robot/build/lib
+[12.552s] creating /home/user/ws_mobile_robot/build/mobile_robot/build/lib/mobile_robot
+[12.552s] copying mobile_robot/__init__.py -> /home/user/ws_mobile_robot/build/mobile_robot/build/lib/mobile_robot
+[12.553s] running install
+[12.596s] running install_lib
+[12.755s] creating /home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages/mobile_robot
+[12.755s] copying /home/user/ws_mobile_robot/build/mobile_robot/build/lib/mobile_robot/__init__.py -> /home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages/mobile_robot
+[12.758s] byte-compiling /home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages/mobile_robot/__init__.py to __init__.cpython-312.pyc
+[12.759s] running install_data
+[12.760s] copying resource/mobile_robot -> /home/user/ws_mobile_robot/install/mobile_robot/share/ament_index/resource_index/packages
+[12.765s] copying package.xml -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot
+[12.765s] copying launch/gazebo_model.launch.py -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/launch
+[12.766s] copying model/robot.xacro -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/model
+[12.772s] copying model/robot.gazebo -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/model
+[12.776s] copying model/obstacle_avoidance.py -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/model
+[12.777s] copying params/bridge_parameters.yaml -> /home/user/ws_mobile_robot/install/mobile_robot/share/mobile_robot/params
+[12.780s] running install_egg_info
+[12.944s] Copying ../../build/mobile_robot/mobile_robot.egg-info to /home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages/mobile_robot-0.0.0-py3.12.egg-info
+[12.951s] running install_scripts
+[13.864s] writing list of installed files to '/home/user/ws_mobile_robot/build/mobile_robot/install.log'
+[14.019s] Invoked command in '/home/user/ws_mobile_robot/src/mobile_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/ws_mobile_robot/build/mobile_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/ws_mobile_robot/install/mobile_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mobile_robot build --build-base /home/user/ws_mobile_robot/build/mobile_robot/build install --record /home/user/ws_mobile_robot/build/mobile_robot/install.log --single-version-externally-managed install_data --force
